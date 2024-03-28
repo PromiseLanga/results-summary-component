@@ -1,14 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
 
+
 :root {
     --bgc1: hsl(252, 100%, 67%);
     --bgc2: hsl(241, 81%, 54%);
+    --bgc3: hsl(300, 76%, 72%);
+    --bgc4: #D1FFBD;
+    --bgc5: #DFF2FF;
     --circle1: hsla(256, 72%, 46%, 1);
-    --circle2: hsla(241, 72%, 46%, 0);
+    --circle2: hsla(241, 72%, 46%, 0.6);
     --color1: hsl(0, 0%, 100%);
     --color2: hsl(221, 100%, 96%);
     --color3: hsl(241, 100%, 89%);
     --color4: hsl(224, 30%, 27%);
+    
 }
 
 body {
@@ -18,8 +23,10 @@ body {
 
 #container {
     display: flex;
-    background-color: var(--color1);
-    padding-top: 35px;
+    width: 550px;
+    background-color: var(--color3);
+    border-radius: 25px;
+    
    
 }
 
@@ -40,10 +47,11 @@ h1 {
 }
 
 .circle {
-    background-color: var(--circle1);
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    background-color: var(--circle2);
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -54,7 +62,7 @@ h1 {
 
 .bold {
     color: var(--color1);
-    font-size: 45px;
+    font-size: 65px;
     font-weight: 800;
 }
 
@@ -65,4 +73,31 @@ h2{
 
 p{
     color: var(--color3);
+}
+
+.summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 25px;
+    padding-bottom: 30px;
+    font-family: "Hanken Grotesk", sans-serif;
+   
+
+}
+
+h3 {
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+.btn {
+    background-color: var(--color4);
+    border: none;
+    border-radius: 25px;
+    width: 170px;
+    height: 30px;
+    color: var(--color1);
+    
+    
 }
