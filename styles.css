@@ -4,9 +4,9 @@
 :root {
     --bgc1: hsl(252, 100%, 67%);
     --bgc2: hsl(241, 81%, 54%);
-    --bgc3: hsl(300, 76%, 72%);
-    --bgc4: #D1FFBD;
-    --bgc5: #DFF2FF;
+    --bgc3: hsla(322, 50%, 87%, 1);
+    --bgc4: hsl(88, 77%, 78%);
+    --bgc5: hsla(190, 76%, 87%, 1);
     --circle1: hsla(256, 72%, 46%, 1);
     --circle2: hsla(241, 72%, 46%, 0.6);
     --color1: hsl(0, 0%, 100%);
@@ -17,18 +17,20 @@
 }
 
 body {
-    background-color: var(--color1);
+    background-color: var(--color2);
     width: 1440px;
 }
 
 #container {
     display: flex;
+    margin: 120px 120px 120px 120px;
     width: 550px;
-    background-color: var(--color3);
+    background-color: var(--color1);
     border-radius: 25px;
-    
-   
+    box-shadow: 0 24px 28px var(--color3), 0 24px 28px var(--color3);
 }
+
+
 
 .results {
     background-color: var(--bgc2);
@@ -78,12 +80,10 @@ p{
 .summary {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding-left: 25px;
+    padding-left: 30px;
     padding-bottom: 30px;
     font-family: "Hanken Grotesk", sans-serif;
-   
-
+    
 }
 
 h3 {
@@ -91,13 +91,57 @@ h3 {
     padding-top: 10px;
 }
 
+#data {
+    display: flex;
+    flex-direction: column;
+    line-height: 35px;
+    gap: 16px;
+    width: 180px;
+    
+    
+}
+
+#reaction {
+    background-color: var(--bgc3);
+    border-radius: 8px;
+    
+}
+
+#memory {
+    background-color: var(--bgc4);
+    border-radius: 8px;
+}
+
+#verbal {
+    background-color: var(--bgc5);
+    border-radius: 8px;
+}
+
+#visual {
+    background-color: var(--bgc1);
+    border-radius: 8px;
+}
+
 .btn {
     background-color: var(--color4);
     border: none;
     border-radius: 25px;
-    width: 170px;
-    height: 30px;
+    width: 180px;
+    height: 35px;
     color: var(--color1);
+    cursor: pointer;
+     
+}
+
+.percentage {
+    font-weight: 700
+}
+
+span {
+    padding-left: 24px;
     
-    
+}
+
+img {
+    padding-right: 10px;
 }
