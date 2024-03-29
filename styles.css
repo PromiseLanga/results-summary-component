@@ -18,7 +18,10 @@
 
 body {
     background-color: var(--color2);
-    width: 1440px;
+    min-height: 100vh;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
 }
 
 #container {
