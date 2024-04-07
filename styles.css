@@ -17,8 +17,12 @@
 }
 
 body {
-    background-color: var(--color2);
-    width: 1440px;
+     background-color: var(--color2);
+    min-height: 100vh;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    
 }
 
 #container {
